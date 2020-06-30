@@ -1,0 +1,29 @@
+ <div>
+    <%= form_tag('/companies', method: :post) do %>
+    　
+    <label>NO</label>
+      　<input type="text" name="id">
+    <label>会社名</label>
+      　<input type="text" name="name">
+    <label>代表者</label>
+     　 <input type="text" name="person">
+    <label>郵便番号</label>
+        <input type="text" name="post" >
+    <label>住所1</label>
+       <input type="text" name="address1"  >
+    <label>住所2</label>
+      <input type="text" name="address2" >
+    <label>TEL1</label>
+      <input type="text" name="tel1" >
+    <label>TEL2</label>
+      <input type="text" name="tel2" >
+    <label>FAX</label>
+      <input type="text" name="fax" >
+    <label>MAIL</label>
+      <input type="text" name="mail" >
+    <label>明細送付住所</label>
+      <input type="text" name="post_address" >
+
+    <input type="submit" value="SENT" >
+    <% end %>
+  </div>

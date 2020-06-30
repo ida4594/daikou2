@@ -1,0 +1,27 @@
+<div>
+　<%= form_tag("/companies/#{@company.id}", method: :patch ) do %>
+　
+  <label>会社名</label>
+    <input type="text" name="name" value="<%= @company.name %>" >
+  <label>代表者</label>
+    <input type="text" name="person" value="<%= @company.person %>" >
+  <label>郵便番号</label>
+    <input type="text" name="post" value="<%= @company.post %>" >
+  <label>住所1</label>
+    <input type="text" name="address1" value="<%= @company.address1 %>" >
+  <label>住所2</label>
+    <input type="text" name="address2" value="<%= @company.address2 %>" >
+  <label>TEL1</label>
+    <input type="text" name="tel1" value="<%= @company.tel1 %>" >
+  <label>TEL2</label>
+    <input type="text" name="tel2" value="<%= @company.tel2 %>" >
+  <label>FAX</label>
+    <input type="text" name="fax" value="<%= @company.fax %>" >
+  <label>MAIL</label>
+    <input type="text" name="mail" value="<%= @company.mail %>" >
+  <label>明細送付住所</label>
+    <input type="text" name="post_address" value="<%= @company.post_address %>" >
+
+  <input type="submit" value="SENT" href="/companies">
+  <% end %>
+</div>
