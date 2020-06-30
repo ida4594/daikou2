@@ -1,3 +1,52 @@
-<% @companies.each do |company| %>
-  <p><%= company.name %></p>
-<% end %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>販売代行会社一覧</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="compaies.scss">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+</head>
+
+<header class="menu">
+ <h6>販売代行会社一覧</h6>
+ <a class="btn" href="/companies/new">新規登録</a>
+ <a class="btn" href="/sales">売上取込</a>
+ <a class="btn" href="/shops">店舗</a>
+</header>
+
+<div class="main">
+ <table border="1">
+    <tr>
+      <th>NO</th>
+      <th>会社名</th>
+      <th>代表者</th>
+      <th>郵便番号</th>
+      <th>住所1</th>
+      <th>住所2</th>
+      <th>TEL1</th>
+      <th>TEL2</th>
+      <th>FAX</th>
+      <th>MAIL</th>
+      <th>明細送付住所</th>
+    </tr>
+    <% @companies.each do |company| %>
+    <tr>
+    　<td><%= company.id %></td>
+      <td><%= company.name %></td>
+      <td><%= company.person %></td>
+      <td><%= company.post %></td>
+      <td><%= company.address1 %></td>
+      <td><%= company.address2 %></td>
+      <td><%= company.tel1 %></td>
+      <td><%= company.tel2 %></td>
+      <td><%= company.fax %></td>
+      <td><%= company.mail %></td>
+      <td><%= company.post_address %></td>
+      <td><%= link_to '編集', "/companies/#{company.id}/edit", method: :get %></td>
+      <td><%= link_to '削除', "/companies/#{company.id}", method: :delete %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
+</html>

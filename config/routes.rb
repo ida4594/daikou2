@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  get 'companies' => 'companies#index'
+  resources :companies
+  resources :shops
+  resources :sales do
+    collection { post :import }
+  end
 
 end
