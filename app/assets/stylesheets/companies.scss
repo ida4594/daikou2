@@ -1,12 +1,32 @@
-.main{
-  min-height: 100vh;
-  
-  flex-direction: column;
+*{
+  font-family: Avenir, "Helvetica Neue", Verdana, Helvetica, Arial, Roboto, YuGothic,"Meiryo UI", メイリオ, Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #000;
+}
+
+a {  
+  color: inherit;
+  text-decoration: none;
 }
 
 .menu{
   width: 100%;
-  background-color:#ffec27;
-  font-family: 'Noto Sans JP', sans-serif;
+  height: 50px;
+  text-indent: 30px; 
+  line-height: 50px;
+  font-size:20px;
+  border-bottom: 1px solid gray;
 }
 
+.btn:hover{
+    text-decoration:underline;	/*リンクにマウスが乗ったら下線を表示*/
+  }
+
+.main{
+ // background-image: url("https://d1f5hsy4d47upe.cloudfront.net/4f/4f86ffdc075b35d207c92ed0f1194520_t.jpeg");
+  height: 777px;
+}
+
+.main2{
+  padding-top: 20px;
+  padding-left: 20px;
+}

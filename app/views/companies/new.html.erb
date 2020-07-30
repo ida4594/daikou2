@@ -1,29 +1,65 @@
  <div>
-    <%= form_tag('/companies', method: :post) do %>
-    　
-    <label>NO</label>
-      　<input type="text" name="id">
-    <label>会社名</label>
-      　<input type="text" name="name">
-    <label>代表者</label>
-     　 <input type="text" name="person">
-    <label>郵便番号</label>
-        <input type="text" name="post" >
-    <label>住所1</label>
-       <input type="text" name="address1"  >
-    <label>住所2</label>
-      <input type="text" name="address2" >
-    <label>TEL1</label>
-      <input type="text" name="tel1" >
-    <label>TEL2</label>
-      <input type="text" name="tel2" >
-    <label>FAX</label>
-      <input type="text" name="fax" >
-    <label>MAIL</label>
-      <input type="text" name="mail" >
-    <label>明細送付住所</label>
-      <input type="text" name="post_address" >
+    <%= form_tag('/companies', method: :post) do %> 　
+<table border="1">
+ <tr>
+  <td>NO</td>
+  <td><input type="text" name="id"></td>
+ </tr>
 
-    <input type="submit" value="SENT" >
-    <% end %>
-  </div>
+ <tr>
+  <td>会社名</td>
+  <td><input type="text" name="name"></td>
+ </tr>
+
+<tr>
+  <td>代表者</td>
+  <td><input type="text" name="person"></td>
+ </tr>
+
+ <tr>
+  <td>郵便番号</td>
+  <td><input type="text" name="post"></td>
+ </tr>
+
+ <tr>
+  <td>住所1</td>
+  <td><input type="text" name="address1"></td>
+ </tr>
+
+ <tr>
+  <td>住所2</td>
+  <td><input type="text" name="address2"></td>
+ </tr>
+
+ <tr>
+  <td>TEL1</td>
+  <td><input type="text" name="tel1"></td>
+ </tr>
+
+ <tr>
+  <td>TEL2</td>
+  <td><input type="text" name="tel1"></td>
+ </tr>
+
+ <tr>
+  <td>TEL1</td>
+  <td><input type="text" name="tel2"></td>
+ </tr>
+
+ <tr>
+  <td>FAX</td>
+  <td><input type="text" name="fax"></td>
+ </tr>
+
+ <tr>
+  <td>MAIL</td>
+  <td><input type="text" name="mail"></td>
+ </tr>
+
+ <tr>
+  <td>明細送付住所</td>
+  <td><input type="text" name="post_address" ></td>
+ </tr>
+</table>
+<input type="submit" value="登録" >
+<% end %>
