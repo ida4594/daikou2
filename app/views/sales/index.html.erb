@@ -3,6 +3,7 @@
 <table border="1">
   <thead>
     <tr>
+      <th>NO</th>
       <th>店舗コード</th>
       <th>売上</th>
     </tr>
@@ -11,6 +12,7 @@
   <tbody>
     <% @sales.each do |sale| %>
       <tr>
+        <td><%= sale.id %></td>
         <td><%= sale.shop_id %></td>
         <td><%= sale.rate %></td>
       </tr>
