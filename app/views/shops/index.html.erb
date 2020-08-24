@@ -1,32 +1,23 @@
-<h1>店舗一覧</h1>
+<header class="menu">
+<a>店舗一覧</a>
+</header>
 
-<table border="1">
-  <thead>
+<a class="btn" href="/shops/new">店舗登録</a>
+
+<div class="main">
+ <table border="1">
     <tr>
-      <th>店舗コード</th>
+      <th>SHOPコード</th>
       <th>店舗名</th>
       <th>掛率</th>
-      <th>店舗売上</th>
     </tr>
-  </thead>
-
-  <tbody>
-    
     <% @shops.each do |shop| %>
-      <tr>
-        <td><%= shop.shop_id %></td>
-        <td><%= shop.name %></td>
-        <td><%= shop.rate %></td>
+    <tr>
+      <td><%= shop.id%></td>
+      <td><%= shop.name%></td>
 
-      　<% shop.sales.each do |sale| %>
-        　<td><%= shop.rate * 0.01 * sale.rate %></td>
-      　<% end %>
-    　</tr>
+    </tr>
     <% end %>
-    
-    
-    
-  </tbody>
-</table>
-
-<a class="btn" href="/companies">一覧へ戻る</a>
+  </table>
+  <a class="btn" href="/companies">一覧へ戻る</a>
+</div>

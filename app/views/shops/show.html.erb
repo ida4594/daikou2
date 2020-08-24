@@ -1,0 +1,25 @@
+<table border="1">
+  <thead>
+    <tr>
+      <th>店舗コード</th>
+      <th>店舗名</th>
+      <th>掛率</th>
+      <th>店舗売上</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+    <% @shops.each do |shop| %>
+      <tr>
+        <td><%= shop.shop_id %></td>
+        <td><%= shop.name %></td>
+        <td><%= shop.rate %></td>
+
+      <% shop.sales.each do |sale| %>
+        <td><%= shop.rate * 0.01 * sale.rate %></td>
+      <% end %>
+    </tr>
+    <% end %>  
+  </tbody>
+</table>

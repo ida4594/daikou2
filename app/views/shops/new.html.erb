@@ -1,0 +1,21 @@
+<div>
+    <%= form_tag('/shops', method: :post) do %>
+<table border="1">
+  <tr>
+  <td>shop_id</td>
+  <td><input type="text" name="shop_id"></td>
+  </tr>
+  
+  <tr>
+  <td>店舗名</td>
+  <td><input type="text" name="name"></td>
+  </tr>
+
+  <tr>
+  <td>掛率</td>
+  <td><input type="text" name="rate"></td>
+  </tr>
+
+</table>
+<input type="submit" value="登録" >
+<% end %>
