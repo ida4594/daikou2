@@ -1,59 +1,21 @@
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
+# アプリ名
+販売代行明細作成アプリ
 
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
+# 概要
 
-"hoge"が何かを簡潔に紹介する
+# 本番環境
+http://54.95.141.25/
 
-# DEMO
+# 制作背景(意図)
+⇒どんな課題や不便なことを解決するためにこのアプリを作ったのか。
 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
+# DEMO(gifで動画や写真を貼って、ビューのイメージを掴んでもらいます)
+⇒特に、デプロイがまだできていない場合はDEMOをつけることで見た目を企業側に伝えることができます。
 
-# Features
+# 工夫したポイント
 
-"hoge"のセールスポイントや差別化などを説明する
+# 使用技術(開発環境)
 
-# Requirement
+# 課題や今後実装したい機能
 
-"hoge"を動かすのに必要なライブラリなどを列挙する
-
-* huga 3.5.2
-* hogehuga 1.0.2
-
-# Installation
-
-Requirementで列挙したライブラリなどのインストール方法を説明する
-
-```bash
-pip install huga_package
-```
-
-# Usage
-
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
-
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
-
-# Note
-
-注意点などがあれば書く
-
-# Author
-
-作成情報を列挙する
-
-* 作成者
-* 所属
-* E-mail
-
-# License
-ライセンスを明示する
-
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-社内向けなら社外秘であることを明示してる
-
-"hoge" is Confidential.
+# DB設計
