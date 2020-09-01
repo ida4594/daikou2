@@ -1,4 +1,4 @@
 class Shop < ApplicationRecord
-  has_many :sales, primary_key: 'shop_id'
+  has_many :sales
   belongs_to :company
 end

@@ -7,17 +7,23 @@
 <div class="main">
  <table border="1">
     <tr>
-      <th>SHOPコード</th>
+      <th>店舗コード</th>
       <th>店舗名</th>
       <th>掛率</th>
+      <th>販売代行会社</th>
     </tr>
+
     <% @shops.each do |shop| %>
     <tr>
-      <td><%= shop.id%></td>
-      <td><%= shop.name%></td>
-
-    </tr>
+    <td><%= shop.shop_id %></td>
+    <td><%= shop.name %></td>
+    <td><%= shop.rate %></td>
+    <td><%= shop.company.name %></td>
+    <td><%= link_to '編集', "/shops/#{shop.id}/edit", method: :get %></td>
+    <td><%= link_to '削除', "/shops/#{shop.id}", method: :delete %></td>
+    <tr>
     <% end %>
+
   </table>
-  <a class="btn" href="/companies">一覧へ戻る</a>
+<a class="btn" href="/companies">一覧へ戻る</a>
 </div>
