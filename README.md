@@ -15,7 +15,13 @@ http://54.95.141.25/
 # DEMO(gifで動画や写真)
 
 # 使用技術(開発環境)
-rails
+HTML
+CSS
+Ruby
+Ruby on Rails
+GitHuX
+AWS
+
 
 # 課題や今後実装したい機能
 PDFファイルに出力、売上以外の計上の記載
