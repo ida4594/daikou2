@@ -13,7 +13,7 @@ class ShopsController < ApplicationController
   end
   
   def show
-    @shops = Shop.all.includes(:sales)
+    @shops = Shop.all
   end
 
   def destroy

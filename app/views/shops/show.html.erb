@@ -9,17 +9,19 @@
   </thead>
 
   <tbody>
-    
     <% @shops.each do |shop| %>
-      <tr>
-        <td><%= shop.shop_id %></td>
-        <td><%= shop.name %></td>
-        <td><%= shop.rate %></td>
+    <td><%= shop.company.name %></td>
+       <% shop.each do |shopo| %>
+       <tr>
+         <td><%= shopo.shop_id %></td>
+         <td><%= shopo.name %></td>
+         <td><%= shopo.rate %></td>
 
-      <% shop.sales.each do |sale| %>
-        <td><%= shop.rate * 0.01 * sale.rate %></td>
-      <% end %>
-    </tr>
+           <% shopo.sales.each do |sale| %>
+            <td><%= shopo.rate * 0.01 * sale.rate %></td>
+           <% end %>
+      </tr>
+    <% end %>
     <% end %>  
   </tbody>
 </table>
